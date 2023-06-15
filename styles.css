@@ -1,0 +1,124 @@
+/* CSS Variables */
+:root {
+  --primary-color: #3366CC;
+  --secondary-color: #FF9900;
+  --font-size-large: 20px;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper Styles */
+.wrapper {
+  text-align: center;
+}
+
+/* Container Styles */
+.container {
+  background-color: #F1F1F1;
+  width: 800px;
+  padding: 20px;
+  overflow: auto;
+  display: inline-block;
+}
+
+/* Heading Styles */
+h1 {
+  color: var(--primary-color);
+  font-size: var(--font-size-large);
+  text-align: center;
+}
+
+/* Unordered List Styles */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li:first-child {
+  color: var(--secondary-color);
+}
+
+/* Image Styles */
+img {
+  width: 200px;
+  height: 200px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--primary-color);
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #999999;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+}
+
+tbody tr:hover {
+  background-color: #F5F5F5;
+  color: #333333;
+}
+
+td:hover {
+  cursor: pointer;
+}
+
+/* Specific Table Cell Selection */
+tr:first-child td {
+  background-color: #FFFFCC;
+}
+
+tr:last-child td {
+  background-color: #FFCCCC;
+}
+
+td:first-child {
+  background-color: #CCFFCC;
+}
+
+td:last-child {
+  background-color: #CCCCFF;
+}
+
+/* Link Styles */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+a:active {
+  color: #FF0000;
+}
+
+/* Pseudo-element Styles */
+.container::before {
+  content: "Decorative Content";
+  display: block;
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
